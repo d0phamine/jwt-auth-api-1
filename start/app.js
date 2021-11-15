@@ -1,5 +1,28 @@
 'use strict'
 
+// async function sendImageToGroupMe(req, res, filedata) {
+
+//   // const options = {
+//   //     url: "http://127.0.0.1:5000/exif",
+//   //     body: filedata,
+//   //     method: "POST",
+//   //     headers : {
+//   //       "content-type": "application/json",
+//   //   },
+//   //     json: true
+//   // }
+//   // var content ="000000000"
+//   // request(options, (err, response, body) => {
+//   //     console.log("Request complete: Response: ",body);
+//   //     content = body
+//   // });
+//   // return content
+  
+//   return await axios.post('http://127.0.0.1:5000/exif',{
+//     body: filedata,
+//   })
+// }
+
 /*
 |--------------------------------------------------------------------------
 | Providers
@@ -56,3 +79,4 @@ const aliases = {}
 const commands = []
 
 module.exports = { providers, aceProviders, aliases, commands }
+

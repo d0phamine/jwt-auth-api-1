@@ -24,9 +24,15 @@
     "@adonisjs/framework": "^5.0.7",
     "@adonisjs/ignitor": "^2.0.6",
     "@adonisjs/lucid": "^5.0.4",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "multer": "^1.4.3",
+    "node-fetch": "^3.1.0",
+    "request": "^2.88.2",
     "sqlite3": "^4.0.1"
   },
-  "devDependencies": {},
   "autoload": {
     "App": "./app"
   }
