@@ -33,6 +33,23 @@ Route.post('upload', async ({ request, response }) => {
   }
 })
 
+Route.post('textan', async ({ request, response }) => {
+  let textan = request.body;
+  // console.log(textan)
+  try {
+    if (!textan) {
+      response.send("Error text")
+    } else {
+      var textToAnalyse = await axios.post('http://127.0.0.1:5001/textan', {
+        body: textan,
+      }).then(result => response.send(result.data))
+    }
+  }
+  catch (e) {
+    console.log(e)
+  }
+})
+
 Route.group(() => {
   // Route.post('exifPhotoUpload', 'ServiceRequests/ServiceRequestsController.exifPhotoUpload')
   Route.post('login', 'Auth/AuthenticationController.login')
