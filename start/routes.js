@@ -52,6 +52,7 @@ Route.post('textan', async ({ request, response }) => {
 
 Route.group(() => {
   // Route.post('exifPhotoUpload', 'ServiceRequests/ServiceRequestsController.exifPhotoUpload')
+  Route.get('services', 'ServiceController.index')
   Route.post('login', 'Auth/AuthenticationController.login')
   Route.post('register', 'Auth/AuthenticationController.register')
   Route.get('me', 'Auth/AuthenticationController.me').middleware(['auth'])
